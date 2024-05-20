@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="600.0" style="-fx-background-color: #000D6B;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <TextField fx:id="user" layoutX="217.0" layoutY="128.0" prefHeight="25.0" prefWidth="216.0" promptText="Entre votre UserName">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="167.0" layoutY="128.0">
+         <image>
+            <Image url="@../../../../imageVoiture/59170.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="164.0" layoutY="165.0">
+         <image>
+            <Image url="@../../../../imageVoiture/password-22.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="266.0" layoutY="83.0" style="-fx-background-color: #a0a2ab;" text="Espace  Admin" textFill="#2c2b2b" />
+      <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="280.0" layoutY="20.0">
+         <image>
+            <Image url="@../../../../imageVoiture/2206368.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="valider" layoutX="375.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="40.0" prefWidth="137.0" style="-fx-background-color: #a0a2ab;" text="Valider" textFill="#2e4bbf">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="retour" layoutX="134.0" layoutY="233.0" mnemonicParsing="false" onAction="#redirectToHome" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #a0a2ab;" text="Retourner" textFill="#2e4bbf">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="217.0" layoutY="173.0" prefHeight="30.0" prefWidth="216.0" promptText="Entrer Votre Password" />
+   </children>
+</AnchorPane>
